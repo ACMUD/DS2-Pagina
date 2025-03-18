@@ -11,7 +11,6 @@ def CLink_icon(text:str, href:str, icon:str):
              <div/>
              """, unsafe_allow_html=True)
 
-import streamlit as st
 def CLink(text:str, href:str, icon:str):
     st.write(f"""
              <div style="padding:1em;">
