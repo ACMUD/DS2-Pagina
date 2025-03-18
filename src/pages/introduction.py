@@ -1,8 +1,5 @@
 import streamlit as st
 from components.link import CLink
-import requests
-
-
 
 def Introduction():
     tools = [
