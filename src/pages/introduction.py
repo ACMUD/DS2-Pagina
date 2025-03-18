@@ -2,37 +2,38 @@ import streamlit as st
 from components.link import CLink
 import requests
 
-tools = [
-    ["Python",
-    "https://www.python.org/",
-    "python/python-original.svg"],
-    ["Jupyter",
-    "https://jupyter.org/",
-    "jupyter/jupyter-original-wordmark.svg"],
-    ["Podman",
-        "https://podman.io/",
-        "podman/podman-original.svg"],
-    ["Docker",
-        "https://www.docker.com/",
-        "docker/docker-original-wordmark.svg"],
-    ["MongoDB",
-        "https://www.mongodb.com/",
-        "mongodb/mongodb-original.svg"]
-]
 
-frameworks = [
-    ["Scikit-learn",
-        "",
-        "scikitlearn/scikitlearn-original.svg"],
-    ["Pandas",
-        "",
-        "pandas/pandas-original.svg"],
-    ["Matplotlib",
-        "",
-        "matplotlib/matplotlib-original.svg"],
-]
 
 def Introduction():
+    tools = [
+        ["Python",
+        "https://www.python.org/",
+        "python/python-original.svg"],
+        ["Jupyter",
+        "https://jupyter.org/",
+        "jupyter/jupyter-original-wordmark.svg"],
+        ["Podman",
+            "https://podman.io/",
+            "podman/podman-original.svg"],
+        ["Docker",
+            "https://www.docker.com/",
+            "docker/docker-original-wordmark.svg"],
+        ["MongoDB",
+            "https://www.mongodb.com/",
+            "mongodb/mongodb-original.svg"]
+    ]
+
+    frameworks = [
+        ["Scikit-learn",
+            "",
+            "scikitlearn/scikitlearn-original.svg"],
+        ["Pandas",
+            "",
+            "pandas/pandas-original.svg"],
+        ["Matplotlib",
+            "",
+            "matplotlib/matplotlib-original.svg"],
+    ]
     st.title("Introduction a la ciencia de datos")
     st.write("""
              El curso de ciencia de datos está centrado en como gestionar los datos,\
