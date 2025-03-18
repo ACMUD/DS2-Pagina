@@ -36,7 +36,7 @@ def Introduction():
     st.title("Introduction a la ciencia de datos")
     st.write("""
              El curso de ciencia de datos está centrado en como gestionar los datos,\
-             las estructuras para almacentarlos y como utilizarlos para construir \
+             las estructuras para almacenarlos y como utilizarlos para construir \
              modelos que permitan predecir y clasificar nuevos conjuntos de datos utilizando python.
              """)
     
@@ -55,3 +55,5 @@ def Introduction():
         with layout[i%len(layout)]:
             frameworks[i][2] = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/'+ frameworks[i][2]
             CLink(*frameworks[i])
+    
+    
