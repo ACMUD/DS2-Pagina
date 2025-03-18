@@ -2,7 +2,8 @@ import streamlit as st
 
 from pages import (
     Introduction, 
-    MongoDB, 
+    MongoDB,
+    MongoShell,
 
     Modelos_introduccion,
     Modelos_fundamentos,
@@ -21,13 +22,13 @@ from pages import (
     
 )
 
-
 pages = {
     "Introduccion": [
         st.Page(Introduction, title="Introducción")
     ],
     "MongoDB": [
-        st.Page(MongoDB, title="MongoDB"),
+        st.Page(MongoDB, title="Mongodb instalación"),
+        st.Page(MongoShell, title="Mongo shell")
     ],
     "Modelos Matemáticos e Indicadores en Data Science": [
         st.Page(Modelos_introduccion, title="Introducción"),

@@ -17,5 +17,6 @@ from .WebScraping.proyectos import WebScraping_proyectos
 from .WebScraping.alternativas import WebScraping_alternativas
 from .WebScraping.buenaspracticas import WebScraping_buenaspracticas
 
-# MongoDB
-from .mongodb import MongoDB
+# mongo
+from .mongodb.mongodb import MongoDB
+from .mongodb.mongoshell import MongoShell
