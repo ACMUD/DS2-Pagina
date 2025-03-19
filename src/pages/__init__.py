@@ -19,3 +19,5 @@ from .WebScraping.buenaspracticas import WebScraping_buenaspracticas
 
 # mongo
 from .mongodb import MongoDB, MongoShell, MongoAggregations, MongoPython, ODM
+
+from .pipelines.pipeline import Pipeline

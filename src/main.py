@@ -23,6 +23,8 @@ from pages import (
     WebScraping_alternativas,
     WebScraping_buenaspracticas,
     
+    Pipeline
+    
 )
 
 pages = {
@@ -52,6 +54,9 @@ pages = {
         st.Page(WebScraping_proyectos, title="Proyectos"),
         st.Page(WebScraping_alternativas, title="Alternativas"),
         st.Page(WebScraping_buenaspracticas, title="Buenas Prácticas"),
+    ],
+    "Pipeline": [
+        st.Page(Pipeline, title="Pipelines")
     ]
 }
 
