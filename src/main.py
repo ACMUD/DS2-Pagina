@@ -1,5 +1,5 @@
 import streamlit as st
-
+from PIL import Image
 from pages import (
     Introduction, 
     MongoDB,
@@ -54,6 +54,24 @@ pages = {
         st.Page(WebScraping_buenaspracticas, title="Buenas Prácticas"),
     ]
 }
+
+
+st.write("""
+        <style>
+        .stLogo {
+            height:6em !important;
+            margin-left: 1em;
+        }
+        </style>
+         """, unsafe_allow_html=True)
+
+
+st.logo(
+    image = Image.open("./src/static/logo.png"),
+    icon_image = Image.open("./src/static/logo.png"),
+    size = "large",
+)
+
 pg = st.navigation(pages)
 
 pg.run()
