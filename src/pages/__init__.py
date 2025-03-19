@@ -18,5 +18,4 @@ from .WebScraping.alternativas import WebScraping_alternativas
 from .WebScraping.buenaspracticas import WebScraping_buenaspracticas
 
 # mongo
-from .mongodb.mongodb import MongoDB
-from .mongodb.mongoshell import MongoShell
+from .mongodb import MongoDB, MongoShell, MongoAggregations, MongoPython, ODM

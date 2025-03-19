@@ -7,6 +7,8 @@ def MongoDB():
     col1.write("Mongo db es una base de datos no relacional basada en documentos muy util para multiples\
             propósitos, entre ellos el almacenamiento de grandes volumenes de datos no estructurados\
              para su posterior limpieza y analisis, es una gran opción para usar como datalake.")
+    col1.write("""En mongo lo equivalente a tablas en sql son colecciones, las cuales almacenan documentos
+               Estas se crean de forma automatica al momento de agregar documentos.""")
     col2.write("""
              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="120px"/>
              """, unsafe_allow_html=True)

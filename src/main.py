@@ -4,6 +4,9 @@ from pages import (
     Introduction, 
     MongoDB,
     MongoShell,
+    MongoAggregations,
+    MongoPython,
+    ODM,
 
     Modelos_introduccion,
     Modelos_fundamentos,
@@ -27,8 +30,11 @@ pages = {
         st.Page(Introduction, title="Introducción")
     ],
     "MongoDB": [
-        st.Page(MongoDB, title="Mongodb instalación"),
-        st.Page(MongoShell, title="Mongo shell")
+        st.Page(MongoDB, title="Mongodb instalación", icon=":material/database:"),
+        st.Page(MongoShell, title="Mongo shell", icon=":material/terminal:"),
+        st.Page(MongoAggregations, title="Agregaciones", icon=":material/flowchart:"),
+        st.Page(MongoPython, title="Mongo con python", icon=":material/code:"),
+        st.Page(ODM, title="uso de ODM (Object Document Mapper)", icon=":material/code:")
     ],
     "Modelos Matemáticos e Indicadores en Data Science": [
         st.Page(Modelos_introduccion, title="Introducción"),
