@@ -17,16 +17,15 @@ def Clustering():
             "y": np.block([np.random.rand(50)*300+500, np.random.rand(50)*300]),
             "type": ["A"]*50+["B"]*50
         })
-    st.scatter_chart(
+    
+    tab1, tab2 = st.tabs(["Gráfica sin colores", "Gráfico con colores"])
+    
+    tab1.scatter_chart(
         df,
         x="x",
         y="y"
     )
-    
-    st.write("""
-             Para separar estos grupos se pueden colorear
-             """)
-    st.scatter_chart(
+    tab2.scatter_chart(
         df,
         x="x",
         y="y",

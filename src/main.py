@@ -74,6 +74,7 @@ st.write("""
             margin-left: 1em;
         }
         </style>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
          """, unsafe_allow_html=True)
 
 
