@@ -23,8 +23,10 @@ from pages import (
     WebScraping_alternativas,
     WebScraping_buenaspracticas,
     
-    Pipeline
+    Pipeline,
     
+    Clustering,
+    KMeans
 )
 
 pages = {
@@ -57,6 +59,10 @@ pages = {
     ],
     "Pipeline": [
         st.Page(Pipeline, title="Pipelines")
+    ],
+    "Clustering o Agrupación": [
+        st.Page(Clustering, title="Clustering"),
+        st.Page(KMeans, title="K-Means")
     ]
 }
 

@@ -21,3 +21,5 @@ from .WebScraping.buenaspracticas import WebScraping_buenaspracticas
 from .mongodb import MongoDB, MongoShell, MongoAggregations, MongoPython, ODM
 
 from .pipelines.pipeline import Pipeline
+
+from .clustering import Clustering, KMeans
