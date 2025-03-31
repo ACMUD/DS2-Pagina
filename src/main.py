@@ -26,7 +26,8 @@ from pages import (
     Pipeline,
     
     Clustering,
-    KMeans
+    KMeans,
+    AffinityPropagation
 )
 
 pages = {
@@ -62,7 +63,8 @@ pages = {
     ],
     "Clustering o Agrupación": [
         st.Page(Clustering, title="Clustering"),
-        st.Page(KMeans, title="K-Means")
+        st.Page(KMeans, title="K-Means"),
+        st.Page(AffinityPropagation, title="Affinity Propagation"),
     ]
 }
 

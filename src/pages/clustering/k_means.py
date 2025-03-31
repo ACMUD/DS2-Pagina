@@ -4,7 +4,7 @@ from sklearn.datasets import make_blobs
 from sklearn.cluster import KMeans as KM
 import altair as alt
 import pandas as pd
-import time
+
 def KMeans():
     st.title("K-Means")
     st.write("""
@@ -93,3 +93,6 @@ def KMeans():
                 color="type",
             )
         )
+    st.write("""
+             La unica dificultad que tiene el algoritmo es encontrar el numero de clusters para usar en cada caso, ya que no siempre es trivial.
+             """)
