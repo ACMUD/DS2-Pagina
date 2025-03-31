@@ -59,12 +59,12 @@ pages = {
         st.Page(WebScraping_buenaspracticas, title="Buenas Prácticas"),
     ],
     "Pipeline": [
-        st.Page(Pipeline, title="Pipelines")
+        st.Page(Pipeline, title="Pipelines", icon=":material/valve:")
     ],
     "Clustering o Agrupación": [
-        st.Page(Clustering, title="Clustering"),
-        st.Page(KMeans, title="K-Means"),
-        st.Page(AffinityPropagation, title="Affinity Propagation"),
+        st.Page(Clustering, title="Clustering", icon=":material/join:"),
+        st.Page(KMeans, title="K-Means", icon=":material/workspaces:"),
+        st.Page(AffinityPropagation, title="Affinity Propagation", icon = ":material/hub:"),
     ]
 }
 

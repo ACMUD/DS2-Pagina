@@ -54,4 +54,7 @@ def Introduction():
             frameworks[i][2] = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/'+ frameworks[i][2]
             CLink(*frameworks[i])
     
+    st.divider()
+    st.header("Recomendaciones")
+    st.link_button("Página de sklearn - eligiendo el estimador correcto", 'https://scikit-learn.org/stable/machine_learning_map.html')
     
