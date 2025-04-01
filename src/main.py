@@ -1,12 +1,9 @@
 import streamlit as st
-from PIL import Image
+
 from pages import (
     Introduction, 
     MongoDB,
     MongoShell,
-    MongoAggregations,
-    MongoPython,
-    ODM,
 
     Modelos_introduccion,
     Modelos_fundamentos,
@@ -23,8 +20,6 @@ from pages import (
     WebScraping_alternativas,
     WebScraping_buenaspracticas,
     
-    Pipeline
-    
 )
 
 pages = {
@@ -32,11 +27,8 @@ pages = {
         st.Page(Introduction, title="Introducción")
     ],
     "MongoDB": [
-        st.Page(MongoDB, title="Mongodb instalación", icon=":material/database:"),
-        st.Page(MongoShell, title="Mongo shell", icon=":material/terminal:"),
-        st.Page(MongoAggregations, title="Agregaciones", icon=":material/flowchart:"),
-        st.Page(MongoPython, title="Mongo con python", icon=":material/code:"),
-        st.Page(ODM, title="uso de ODM (Object Document Mapper)", icon=":material/code:")
+        st.Page(MongoDB, title="Mongodb instalación"),
+        st.Page(MongoShell, title="Mongo shell")
     ],
     "Modelos Matemáticos e Indicadores en Data Science": [
         st.Page(Modelos_introduccion, title="Introducción"),
@@ -54,29 +46,8 @@ pages = {
         st.Page(WebScraping_proyectos, title="Proyectos"),
         st.Page(WebScraping_alternativas, title="Alternativas"),
         st.Page(WebScraping_buenaspracticas, title="Buenas Prácticas"),
-    ],
-    "Pipeline": [
-        st.Page(Pipeline, title="Pipelines")
     ]
 }
-
-
-st.write("""
-        <style>
-        .stLogo {
-            height:6em !important;
-            margin-left: 1em;
-        }
-        </style>
-         """, unsafe_allow_html=True)
-
-
-st.logo(
-    image = Image.open("./src/static/logo.png"),
-    icon_image = Image.open("./src/static/logo.png"),
-    size = "large",
-)
-
 pg = st.navigation(pages)
 
 pg.run()
