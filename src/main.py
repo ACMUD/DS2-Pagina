@@ -20,6 +20,11 @@ from pages import (
     WebScraping_alternativas,
     WebScraping_buenaspracticas,
     
+    Pipeline,
+    
+    Clustering,
+    KMeans,
+    AffinityPropagation
 )
 
 pages = {
@@ -46,8 +51,35 @@ pages = {
         st.Page(WebScraping_proyectos, title="Proyectos"),
         st.Page(WebScraping_alternativas, title="Alternativas"),
         st.Page(WebScraping_buenaspracticas, title="Buenas Prácticas"),
+    ],
+    "Pipeline": [
+        st.Page(Pipeline, title="Pipelines", icon=":material/valve:")
+    ],
+    "Clustering o Agrupación": [
+        st.Page(Clustering, title="Clustering", icon=":material/join:"),
+        st.Page(KMeans, title="K-Means", icon=":material/workspaces:"),
+        st.Page(AffinityPropagation, title="Affinity Propagation", icon = ":material/hub:"),
     ]
 }
+
+
+st.write("""
+        <style>
+        .stLogo {
+            height:6em !important;
+            margin-left: 1em;
+        }
+        </style>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+         """, unsafe_allow_html=True)
+
+
+st.logo(
+    image = Image.open("./src/static/logo.png"),
+    icon_image = Image.open("./src/static/logo.png"),
+    size = "large",
+)
+
 pg = st.navigation(pages)
 
 pg.run()

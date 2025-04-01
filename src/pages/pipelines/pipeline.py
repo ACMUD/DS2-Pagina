@@ -58,3 +58,7 @@ def Pipeline():
                 df = process(data)
                 save(df)
             """)
+    
+    st.write("""
+             En general, el concepto de pipeline es una cadena de funciones que automaticamente procesan los datos en orden, facilitando asi que todos los datos que se puedan cargar posteriormente se transformen de forma adecuada para el modelo.
+             """)
