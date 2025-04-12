@@ -5,7 +5,9 @@ def Spark():
     CLink_icon("Docker - spark", "https://hub.docker.com/r/apache/spark-py", "devicon-docker-plain colored")
     st.write(
         """
-        Apache Spark is an open-source, distributed computing framework, designed for processing large-scale data efficiently.  It enables parallel data processing across clusters of machines, optimizing performance for big data workloads. It uses RDD (resilient distributed dataset) as data structure, which is a fault-tolerant collection of elements that can be processed in parallel. Spark supports various programming languages, including Scala, Java, Python, and R, making it versatile for data processing tasks. It provides high-level APIs for data manipulation and supports SQL queries, machine learning, and graph processing. Spark's in-memory computing capabilities significantly enhance performance compared to traditional disk-based processing frameworks like Hadoop MapReduce.
+        Apache Spark is an open-source, distributed computing framework, designed for processing large-scale data efficiently.  It enables parallel data processing across clusters of machines, optimizing performance for big data workloads. It uses RDD (resilient distributed dataset) as data structure, which is a fault-tolerant collection of elements that can be processed in parallel. Spark supports various programming languages, including Scala, Java, Python, and R, making it versatile for data processing tasks.
+        
+        It provides high-level APIs for data manipulation and supports SQL queries, machine learning, and graph processing. Spark's in-memory computing capabilities significantly enhance performance compared to traditional disk-based processing frameworks like Hadoop MapReduce.
 
         Has the advantage of being horizontally scalable, so, if an operation is to expensive, we can add more machines to increase the capacity of the cluster, and the operation will be distributed across the machines.
         
