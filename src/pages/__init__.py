@@ -23,3 +23,6 @@ from .mongodb import MongoDB, MongoShell, MongoAggregations, MongoPython, ODM
 from .pipelines.pipeline import Pipeline
 
 from .clustering import Clustering, KMeans, AffinityPropagation
+
+from .frameworks.spark import Spark
+from .frameworks.sparkml import Sparkml

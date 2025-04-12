@@ -24,7 +24,10 @@ from pages import (
     
     Clustering,
     KMeans,
-    AffinityPropagation
+    AffinityPropagation,
+    
+    Spark,
+    Sparkml
 )
 
 pages = {
@@ -59,7 +62,11 @@ pages = {
         st.Page(Clustering, title="Clustering", icon=":material/join:"),
         st.Page(KMeans, title="K-Means", icon=":material/workspaces:"),
         st.Page(AffinityPropagation, title="Affinity Propagation", icon = ":material/hub:"),
-    ]
+    ],
+    "Frameworks": [
+        st.Page(Spark, title="Spark"),
+        st.Page(Sparkml, title="SparkML")
+    ],
 }
 
 
