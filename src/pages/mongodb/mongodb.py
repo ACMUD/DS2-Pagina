@@ -32,7 +32,7 @@ def MongoDB():
     st.write("Se recomienda trabajarlo mediante Atlas, aunque tambien se puede ejecutar mongo en local con ayuda de Docker o Podman")
     st.code("""
             docker pull mongo
-            docker run -p 27017:27017 -n database mongo
+            docker run -p 27017:27017 --name database mongo
             """)
     st.write("El puerto por defecto es 27017, si se quiere usar en otro puerto se puede usar la bandera ``-p`` y luego ``<puerto del equipo local>:<puerto del contenedor>``\
         luego bastará con utilizar la url ``mongodb://<host>:<puerto>`` para conectarse a la base de datos.")

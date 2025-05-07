@@ -36,7 +36,7 @@ def KMeans():
             import matplotlib.pyplot as plt
             from sklearn.datasets import make_blobs
             X, y = make_blobs(n_samples=1000, centers=4, random_state=42)
-            plt.plot(X[:, 0], X[:, 1], alpha=0.5)
+            plt.scatter(X[:, 0], X[:, 1], alpha=0.5)
             """)
 
     global X, df
