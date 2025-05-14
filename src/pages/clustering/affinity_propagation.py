@@ -66,7 +66,7 @@ def AffinityPropagation():
     
     st.code("""
             from sklearn.cluster import AffinityPropagation
-            kmeans = AffinityPropagation(random_state=1).fit(X)
+            AP = AffinityPropagation(random_state=1).fit(X)
             """)
     
     col1, col2 = st.columns(2)

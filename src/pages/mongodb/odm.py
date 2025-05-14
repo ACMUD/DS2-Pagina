@@ -29,8 +29,8 @@ def ODM():
                 
                 model_config = {
                     "Indexes": lambda: [
-                        Index("name"),
-                        Index("email", unique=True)
+                        Index(User.name),
+                        Index(User.email, unique=True)
                     ]
                 }
             """)
